@@ -1,0 +1,202 @@
+[
+	{
+		"id":0,
+		"title":"书包 80元/个",
+		"price":80,
+		"slug":"00",
+		"stackable":true,
+		"stackMax":2
+	},
+	{
+		"id":1,
+		"title":"多功能铅笔盒 38元/个",
+		"price":38,
+		"slug":"01",
+		"stackable":true,
+		"stackMax":5
+	},
+	{
+		"id":2,
+		"title":"笔袋 8元/个",
+		"price":8,
+		"slug":"02",
+		"stackable":true,
+		"stackMax":10
+	},
+	{
+		"id":3,
+		"title":"练习本 1元/个",
+		"price":1,
+		"slug":"03",
+		"stackable":true,
+		"stackMax":30
+	},
+	{
+		"id":4,
+		"title":"铅笔 10元/盒",
+		"price":10,
+		"slug":"04",
+		"stackable":true,
+		"stackMax":3
+	},
+	{
+		"id":5,
+		"title":"橡皮 2元/块",
+		"price":2,
+		"slug":"05",
+		"stackable":true,
+		"stackMax":10
+	},
+	{
+		"id":6,
+		"title":"篮球 35元/个",
+		"price":35,
+		"slug":"06",
+		"stackable":true,
+		"stackMax":3
+	},
+	{
+		"id":7,
+		"title":"足球 45元/个",
+		"price":45,
+		"slug":"07",
+		"stackable":true,
+		"stackMax":3
+	},
+	{
+		"id":8,
+		"title":"航模 168元/个",
+		"price":168,
+		"slug":"08",
+		"stackable":true,
+		"stackMax":1
+	},
+	{
+		"id":9,
+		"title":"汉堡 18元/个",
+		"price":18,
+		"slug":"09",
+		"stackable":true,
+		"stackMax":5
+	},
+	{
+		"id":10,
+		"title":"可乐 3元/瓶",
+		"price":3,
+		"slug":"10",
+		"stackable":true,
+		"stackMax":5
+	},
+	{
+		"id":11,
+		"title":"字典 20元/本",
+		"price":20,
+		"slug":"11",
+		"stackable":true,
+		"stackMax":5
+	},
+	{
+		"id":12,
+		"title":"24色彩笔 15元/套",
+		"price":15,
+		"slug":"12",
+		"stackable":true,
+		"stackMax":5
+	},
+	{
+		"id":13,
+		"title":"图画本 3元/本",
+		"price":3,
+		"slug":"13",
+		"stackable":true,
+		"stackMax":20
+	},
+	{
+		"id":14,
+		"title":"12的A4彩色纸 6元/套",
+		"price":6,
+		"slug":"14",
+		"stackable":true,
+		"stackMax":10
+	},
+	{
+		"id":15,
+		"title":"音乐盒 25元/个",
+		"price":25,
+		"slug":"15",
+		"stackable":true,
+		"stackMax":5
+	},
+	{
+		"id":16,
+		"title":"迪士尼电影杂志 20元/本",
+		"price":20,
+		"slug":"16",
+		"stackable":true,
+		"stackMax":5
+	},
+	{
+		"id":17,
+		"title":"参考书 10元/本",
+		"price":10,
+		"slug":"17",
+		"stackable":true,
+		"stackMax":10
+	},
+	{
+		"id":18,
+		"title":"运动鞋 120元/双",
+		"price":120,
+		"slug":"18",
+		"stackable":true,
+		"stackMax":1
+	},
+	{
+		"id":19,
+		"title":"薯条 10元/条",
+		"price":10,
+		"slug":"19",
+		"stackable":true,
+		"stackMax":5
+	},
+	{
+		"id":20,
+		"title":"漫画书 25元/本",
+		"price":25,
+		"slug":"20",
+		"stackable":true,
+		"stackMax":5
+	},
+	{
+		"id":21,
+		"title":"跳绳 10元/条",
+		"price":10,
+		"slug":"21",
+		"stackable":true,
+		"stackMax":3
+	},
+	{
+		"id":22,
+		"title":"竖笛 60元/个",
+		"price":60,
+		"slug":"22",
+		"stackable":true,
+		"stackMax":2
+	},
+	{
+		"id":23,
+		"title":"公主首饰套盒 68元/盒",
+		"price":68,
+		"slug":"23",
+		"stackable":true,
+		"stackMax":3
+	},
+	{
+		"id":24,
+		"title":"乐高套装 180元/套",
+		"price":180,
+		"slug":"24",
+		"stackable":true,
+		"stackMax":1
+	}
+]
