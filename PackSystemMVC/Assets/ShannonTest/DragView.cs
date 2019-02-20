@@ -5,6 +5,10 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
 
+
+/// <summary>
+/// 鼠标指针拖拽物体的显示
+/// </summary>
 public class DragView : MonoBehaviour {
 
     public GameObject DragPrefab;

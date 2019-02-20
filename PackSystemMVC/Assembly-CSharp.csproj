@@ -1117,7 +1117,7 @@
     <Compile Include="Assets\ShannonTest\ItemDatabase.cs" />
     <Compile Include="Assets\ShannonTest\ItemInstantiate.cs" />
     <Compile Include="Assets\ShannonTest\PackDatabase.cs" />
-    <Compile Include="Assets\ShannonTest\PackGrid.cs" />
+    <Compile Include="Assets\ShannonTest\PackGridInstantiate.cs" />
     <Compile Include="Assets\ShannonTest\PackView.cs" />
     <None Include="Assets\3rd\Demigiant\DOTweenPro\readme.txt" />
     <None Include="Assets\PlayMaker\Templates\Readme.txt" />

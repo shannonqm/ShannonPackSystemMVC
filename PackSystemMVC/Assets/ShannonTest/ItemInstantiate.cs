@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+
+/// <summary>
+/// Model层，商品类及其实例
+/// </summary>
 public class BoxItem : ItemEntity
 {
     public int price;
@@ -40,6 +44,10 @@ public class ItemInstantiate : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         //ThisItem.sprite = _sprite;
     }
 
+    /// <summary>
+    /// 拖拽响应
+    /// </summary>
+    /// <param name="eventData"></param>
     public void OnBeginDrag(PointerEventData eventData)
     {
         ItemController.Instance.OnChooseItem(ThisItem.uuid);
@@ -52,6 +60,6 @@ public class ItemInstantiate : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        ItemController.Instance.OnDropItem();
+        ItemController.Instance.OnEndDragItem();
     }
 }

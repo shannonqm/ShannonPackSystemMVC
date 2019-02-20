@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PackGrid : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler,IDropHandler
+
+/// <summary>
+/// Model，背包格子的实例与拖拽响应
+/// </summary>
+public class PackGridInstantiate : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler,IDropHandler
 {
     public int grid;
     private PackEntity ThisGrid;
@@ -25,11 +29,11 @@ public class PackGrid : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        ItemController.Instance.OnDropItem(grid);
+        ItemController.Instance.OnEndDragItem(grid);
     }
 
     public void OnDrop(PointerEventData eventData)
     {
-        ItemController.Instance.OnDropPack(ThisGrid.grid);
+        ItemController.Instance.OnDropInPack(ThisGrid.grid);
     }
 }

@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// Model层，物品基类及管理类
+/// </summary>
 public class ItemEntity
 {
     public string uuid = "";

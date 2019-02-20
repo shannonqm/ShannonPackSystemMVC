@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+/// <summary>
+/// 背包物品的更新显示
+/// </summary>
 public class PackView : MonoBehaviour {
 
     public Image[] packViews;
@@ -14,7 +18,7 @@ public class PackView : MonoBehaviour {
         Instance = this;
         foreach(Image packs in packViews)
         {
-            int _grid = packs.GetComponent<PackGrid>().grid;
+            int _grid = packs.GetComponent<PackGridInstantiate>().grid;
             packViewList.Add(_grid, packs);
         }
     }

@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// Model层，背包格子类及背包数据类
+/// </summary>
 public class PackEntity
 {
     public int grid;

@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+
+/// <summary>
+/// Controller,单例的控制类，接入拖拽事件，进行数据层操作并转到View类更新
+/// </summary>
 public class ItemController : MonoBehaviour {
 
     public static ItemController Instance;
@@ -43,13 +47,13 @@ public class ItemController : MonoBehaviour {
         DragView.DragInstance.OnDragItem(eventData);        //调用View显示拖动
     }
 
-    public void OnDropItem()        //从商店里拖动结束时调用
+    public void OnEndDragItem()        //从商店里拖动结束时调用
     {
         DragView.DragInstance.OnDropItem();     //调用View销毁鼠标实例
         dragItem = null;
     }
 
-    public void OnDropPack(int _grid)        //物品放下格子里时调用
+    public void OnDropInPack(int _grid)        //物品放下格子里时调用
     {
         if (dragItem != null)
         {
@@ -74,6 +78,8 @@ public class ItemController : MonoBehaviour {
             PackDatabaseMgr.Exchage(dragPack.grid, _grid);
             PackView.Instance.UpdatePackView(dragPack.grid);
             PackView.Instance.UpdatePackView(_grid);
+            DragView.DragInstance.OnDropItem();
+            dragPack = null;
         }
     }
 
@@ -94,13 +100,15 @@ public class ItemController : MonoBehaviour {
             DragView.DragInstance.OnDragItem(eventData);        //调用View显示拖动
     }
 
-    public void OnDropItem(int _grid)        //从背包里拖动结束时调用
+    public void OnEndDragItem(int _grid)        //从背包里拖动结束时调用
     {
         //PackEntity pack = PackDatabaseMgr.CheckGrid(_grid);
         if (dragPack != null)
         {
+            PackDatabaseMgr.Remove(dragPack.grid);
+            PackView.Instance.UpdatePackView(dragPack.grid);
             DragView.DragInstance.OnDropItem();     //调用View销毁鼠标实例
+            dragPack = null;
         }
-        dragPack = null;
     }
 }
